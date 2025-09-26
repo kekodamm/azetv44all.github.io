@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #1f1c2c, #928dab);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7; }
+    to { text-shadow: 0 0 20px #6eebff, 0 0 30px #6eebff; }
+}
+
+.neon-btn {
+    margin-top: 40px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #ff6ec7;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.neon-btn:hover {
+    background: #6eebff;
+    transform: scale(1.1);
+}
